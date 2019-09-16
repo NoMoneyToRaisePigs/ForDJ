@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmailSender
+namespace EmailSender.Modal
 {
-    public class Class1
+    public class WaitingListEmailModal : EmailModalBase
     {
     }
 }

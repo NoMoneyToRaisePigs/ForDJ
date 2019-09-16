@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html style="box-sizing: border-box;
+    font-family: sans-serif;">
+<head style="box-sizing: border-box;
+    font-family: sans-serif;">
+    <title style="box-sizing: border-box; font-family: sans-serif;">Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" style="box-sizing: border-box;
+    font-family: sans-serif;">
+</head>
+<body style="box-sizing: border-box;
+    font-family: sans-serif;">
+    <div id="container" style="box-sizing:border-box;font-family:sans-serif;width:650px;border:solid #c2e5e3 42px;">
+        <div id="logo" style="box-sizing:border-box;font-family:sans-serif;width:100%;"><img src="{{LogoImg}}" style="box-sizing:border-box;font-family:sans-serif;height:200px;width:200px;margin:auto;display:block;"></div>
+        <div id="legend" style="box-sizing:border-box;font-family:sans-serif;width:100%;padding-left:12px;padding-top:12px;padding-bottom:4px;background-color:#f08082;">
+            <p style="box-sizing:border-box;font-family:sans-serif;margin:8px 0;color:white;letter-spacing:2px;font-size:28px;font-weight:400;">Home Recycling Collection Plan</p>
+            <p style="box-sizing:border-box;font-family:sans-serif;margin:8px 0;color:white;letter-spacing:2px;font-size:28px;font-weight:400;">Subscription Confirmation</p>
+        </div>
+        <div id="main-content" style="box-sizing:border-box;font-family:sans-serif;color:#455469;letter-spacing:1px;font-size:20px;padding-left:32px;">
+            <h3 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Hey {{UserName}},</h3>
+            <p style="box-sizing: border-box;font-family: sans-serif;">Thank you for subscribing to our Home Recycling Collection Movement!</p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;"></h4>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">This is waht you will get for recycling with us:</h4>
+            <p id="matrix-img" style="box-sizing:border-box;font-family:sans-serif;width:100%;"><img src="{{MatrixImg}}" style="box-sizing:border-box;font-family:sans-serif;padding-left:24px;width:400px;height:150px;"></p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Your Collection Day:</h4>
+            <p style="box-sizing: border-box;font-family: sans-serif;">Every {{DayOfWeek}}, {{TimeOfDay}} onwards</p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">First Collection Date:</h4>
+            <p style="box-sizing: border-box;font-family: sans-serif;">{{FirstCollectionDate}}</p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">What to Prepare:</h4>
+            <p style="box-sizing: border-box;font-family: sans-serif;">Rinse &amp; Separate all recycleables of different materials into different bags.</p>
+            <p id="main-content-img" style="box-sizing:border-box;font-family:sans-serif;width:100%;"><img src="{{BagImg}}" style="box-sizing:border-box;font-family:sans-serif;width:450px;height:200px;"></p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">On the Day of Collection:</h4>
+            <p style="box-sizing: border-box;font-family: sans-serif;">Before the collection timing,just place them outside your doorstep!</p>
+            <p id="doorstep-img" style="box-sizing:border-box;font-family:sans-serif;width:100%;"><img src="{{DoorstepImg}}" style="box-sizing:border-box;font-family:sans-serif;margin-left:100px;width:200px;height:180px;"></p>
+            <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Trial End:</h4>
+            <p style="box-sizing: border-box;font-family: sans-serif;">{{TrialEndDate}}</p>
+            <p style="box-sizing: border-box;font-family: sans-serif;">
+                <img src="{{HeartImg}}" style="box-sizing: border-box;font-family: sans-serif;"><span style="box-sizing: border-box;font-family: sans-serif;">,goodgoblins</span>
+            </p>
+        </div>
+        <div id="divider" style="box-sizing:border-box;font-family:sans-serif;background-color:#dfdfdf;width:80%;height:2px;margin:auto;"></div>
+        <div id="footer" style="box-sizing:border-box;font-family:sans-serif;text-align:center;font-size:18px;">
+            <p style="box-sizing: border-box;font-family: sans-serif;">{{FooterTitle}}</p>
+            <p style="box-sizing: border-box;font-family: sans-serif;">{{FooterEmail}}</p>
+        </div>
+    </div>
+</body>
+</html>

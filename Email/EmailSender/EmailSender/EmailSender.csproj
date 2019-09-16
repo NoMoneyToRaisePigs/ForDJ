@@ -53,25 +53,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IEmailSender.cs" />
+    <Compile Include="Modal\ConfirmationEmailModal.cs" />
+    <Compile Include="Modal\EmailModalBase.cs" />
+    <Compile Include="Modal\ReminderEmailModal.cs" />
+    <Compile Include="Modal\WaitingListEmailModal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EmailTemplate\bags.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EmailTemplate\heart.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EmailTemplate\logo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EmailTemplate\reminder.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="MetaTemplate\Confirmation\confirmation.css" />
+    <Content Include="MetaTemplate\Confirmation\confirmation.html" />
+    <Content Include="MetaTemplate\Confirmation\raw.html" />
+    <Content Include="MetaTemplate\Image\bags.png" />
+    <Content Include="MetaTemplate\Image\doorstep.PNG" />
+    <Content Include="MetaTemplate\Image\heart.png" />
+    <Content Include="MetaTemplate\Image\logo.png" />
+    <Content Include="MetaTemplate\Image\matrix.PNG" />
+    <Content Include="MetaTemplate\Reminder\raw.html" />
+    <Content Include="MetaTemplate\Reminder\reminder.css" />
+    <Content Include="MetaTemplate\Reminder\reminder.html" />
+    <Content Include="MetaTemplate\WaitingList\raw.html" />
+    <Content Include="MetaTemplate\WaitingList\waitingList.css" />
+    <Content Include="MetaTemplate\WaitingList\waitingList.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

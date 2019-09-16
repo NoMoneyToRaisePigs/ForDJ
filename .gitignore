@@ -1,1 +1,6 @@
 Email/EmailSender/packages/
+Email/EmailSender/.vs/
+Email/EmailSender/EmailSender/bin/
+Email/EmailSender/EmailSender/obj/
+Email/EmailSender/EmailTest/bin/
+Email/EmailSender/EmailTest/obj/
