@@ -1,0 +1,6 @@
+{{UserName}}
+[[item of UnRecyclables@
+<p style="box-sizing: border-box;"><img class="error" src="{{ErrorImg}}" style="margin-right:24px;height:20px;width:15px;vertical-align:middle;"><span style="box-sizing: border-box;font-family: sans-serif;">$$item.Name$$</span></p>
+]]                    
+
+asdasdsadxcvxcv

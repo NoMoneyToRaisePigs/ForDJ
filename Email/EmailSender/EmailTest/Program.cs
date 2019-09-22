@@ -25,7 +25,7 @@ namespace EmailTest
             string martixImgCID = Guid.NewGuid().ToString();
             string doorstepImgCID = Guid.NewGuid().ToString();
 
-            string template = File.ReadAllText(@"C:\Users\Fan\Documents\gaofan folder\Reset.net\DotNet\ForDJ\Email\EmailSender\EmailSender\MetaTemplate\Confirmation\raw.html"); //put your path here
+            string template = File.ReadAllText(@"C:\Users\Fan\Documents\gaofan folder\Reset.net\DotNet\ForDJ\Email\EmailSender\EmailSender\MetaTemplate\Update\test1.txt"); //put your path here
 
             ConfirmationEmailModal modal = new ConfirmationEmailModal
             {
@@ -40,6 +40,27 @@ namespace EmailTest
                 DoorstepImg = $"cid:{doorstepImgCID}",
                 FooterTitle = "your company footer",
                 FooterEmail = "yourCompany@xxx.com"
+            };
+
+            UpdateEmailModal updateModal = new UpdateEmailModal
+            {
+                PositiveRate = 3,
+                UserName = "Ding Jian",
+                LogoImg = $"cid:{logoImgCID}",
+                HeartImg = $"cid:{heartImgCID}",
+                ErrorImg = "cid: 123456",
+                Recyclables = new RecycleItem[] 
+                {
+                    new RecycleItem { Name = "Recyclables1", Percent = 11, Weight = 1.1},
+                    new RecycleItem { Name = "Recyclables2", Percent = 12, Weight = 2.1},
+                    new RecycleItem { Name = "Recyclables3", Percent = 13, Weight = 3.1},
+                },
+                UnRecyclables = new RecycleItem[]
+                {
+                    new RecycleItem { Name = "UnRecyclables1", Percent = 21, Weight = 5.1},
+                    new RecycleItem { Name = "UnRecyclables2", Percent = 32, Weight = 6.1},
+                    new RecycleItem { Name = "UnRecyclables3", Percent = 43, Weight = 7.1},
+                }
             };
 
 
@@ -57,20 +78,20 @@ namespace EmailTest
             imageMatrix.ContentId = martixImgCID;
             imageDoorstep.ContentId = doorstepImgCID;
 
-            TemplateEngine<ConfirmationEmailModal> templateEngine = new TemplateEngine<ConfirmationEmailModal>(modal, template);
+            TemplateEngine<UpdateEmailModal> templateEngine = new TemplateEngine<UpdateEmailModal>(updateModal, template);
             string merged = templateEngine.GetTemplate();
             bodyBuilder.HtmlBody = merged;
 
-            var message = new MimeMessage
-            {
-                Body = bodyBuilder.ToMessageBody(),
-                Subject = "test Sub"
-            };
-            message.From.Add(new MailboxAddress("gf", "gf1103@gmail.com"));
-            message.To.Add(new MailboxAddress("to_name", "dingjian412@gmail.com"));
+            //var message = new MimeMessage
+            //{
+            //    Body = bodyBuilder.ToMessageBody(),
+            //    Subject = "test Sub"
+            //};
+            //message.From.Add(new MailboxAddress("gf", "gf1103@gmail.com"));
+            //message.To.Add(new MailboxAddress("to_name", "dingjian412@gmail.com"));
 
-            IEmailSender sender = new TestEmailSender();
-            sender.SendEmail(message);
+            //IEmailSender sender = new TestEmailSender();
+            //sender.SendEmail(message);
 
             Console.ReadKey();          
         }

@@ -1,0 +1,3 @@
+                        [[PositiveRate@
+                        <img class="star" src="{{StarFillImg}}" style="box-sizing:border-box;font-family:sans-serif;height:45px;width:45px;">
+                        ]]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="box-sizing: border-box;
+    font-family: sans-serif;">
+<head style="box-sizing: border-box;
+    font-family: sans-serif;">
+<title style="box-sizing: border-box;
+    font-family: sans-serif;">Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" style="box-sizing: border-box;
+    font-family: sans-serif;">
+<link type="text/css" rel="stylesheet" href="update.css" style="box-sizing: border-box;
+    font-family: sans-serif;">
+</head>
+<body style="box-sizing: border-box;
+    font-family: sans-serif;">
+    <div id="container" style="box-sizing:border-box;font-family:sans-serif;width:650px;border:solid #c2e5e3 42px;">
+                <div id="logo" style="box-sizing:border-box;font-family:sans-serif;width:100%;"><img src="{{LogoImg}}" style="box-sizing:border-box;font-family:sans-serif;height:200px;width:200px;margin:auto;display:block;"></div>
+                <div id="legend" style="box-sizing:border-box;font-family:sans-serif;width:100%;padding-left:12px;padding-top:12px;padding-bottom:4px;background-color:#f08082;">
+                    <p style="box-sizing:border-box;font-family:sans-serif;margin:8px 0;color:white;letter-spacing:2px;font-size:28px;font-weight:400;">Your Recycling Update:</p>
+                    <p style="box-sizing:border-box;font-family:sans-serif;margin:8px 0;color:white;letter-spacing:2px;font-size:28px;font-weight:400;">{{LegendInfo}}}</p>           
+                </div>
+                <div id="main-content" style="box-sizing:border-box;font-family:sans-serif;color:#455469;letter-spacing:1px;font-size:20px;padding-left:32px;">
+                    <h3 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Hey {{UserName}}},</h3>
+                    <p style="box-sizing: border-box;font-family: sans-serif;">This is your recyling update of the week!</p>
+                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Correct &amp; Recyclable:</h4>
+                    <p class="star-rate" style="box-sizing:border-box;font-family:sans-serif;text-align:center;">
+                        [[PositiveRate@
+                        <img class="star" src="{{StarFillImg}}" style="box-sizing:border-box;font-family:sans-serif;height:45px;width:45px;">
+                        ]]
+                        [[NagetiveRate@
+                        <img class="star" src="{{StarStripeImg}}" style="box-sizing:border-box;font-family:sans-serif;height:45px;width:45px;">
+                        ]]
+                    </p>
+                    [[item of UnRecyclables:
+                    <p style="box-sizing@ border-box;font-family: sans-serif;"><img class="error" src="{{ErrorImg}}" style="box-sizing:border-box;font-family:sans-serif;margin-right:24px;height:20px;width:15px;vertical-align:middle;"><span style="box-sizing: border-box;font-family: sans-serif;">$item.Name$</span></p>
+                    ]]                   
+                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Your recycling this week:</h4>
+                    [[item of Recyclables@                     
+                    <div class="percent-container" style="box-sizing:border-box;font-family:sans-serif;display:flex;width:600px;justify-content:left;align-items:center;">
+                        <div class="percent-label" style="box-sizing:border-box;font-family:sans-serif;width:30%;"><span style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;">$item.Name$ recycled:</span></div>
+                        <div class="percent-full-bar" style="box-sizing:border-box;font-family:sans-serif;display:flex;align-items:center;width:70%;max-width:300px;">
+                            <div class="percent-bar" style="width:$item.Percent$;;box-sizing:border-box;font-family:sans-serif;display:inline-block;height:16px;background-color:#fbcfc1;border:1px solid #7c7b7b;"></div>                        
+                            <span class="percent-kg" style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;margin-left:4px;">$item.Weight$</span>
+                        </div>
+                    </div> 
+                    ]]
+ 
+ 
+                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Total recycled weight: <span style="box-sizing: border-box;
+    font-family: sans-serif;">2kg</span>
+</h4>
+                    <p style="box-sizing: border-box;
+    font-family: sans-serif;">Cheers to making recycling better!</p>
+                    <p style="box-sizing: border-box;
+    font-family: sans-serif;"><img src="{{HeartImg}}" style="box-sizing: border-box;
+    font-family: sans-serif;"><span style="box-sizing: border-box;
+    font-family: sans-serif;">,goodgoblins</span></p>
+                </div>
+                <div id="divider" style="box-sizing:border-box;font-family:sans-serif;background-color:#dfdfdf;width:80%;height:2px;margin:auto;"></div>
+                <div id="footer" style="box-sizing:border-box;font-family:sans-serif;text-align:center;font-size:18px;">
+                    <p style="box-sizing: border-box;
+    font-family: sans-serif;">goodgoblins 2019</p>
+                    <p style="box-sizing: border-box;
+    font-family: sans-serif;">email:heygoodgoblins@gmail.com</p>
+                </div>   
+    </div>   
+</body>
+</html>

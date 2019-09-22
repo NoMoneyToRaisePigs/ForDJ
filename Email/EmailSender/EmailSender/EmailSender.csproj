@@ -57,6 +57,7 @@
     <Compile Include="Modal\ConfirmationEmailModal.cs" />
     <Compile Include="Modal\EmailModalBase.cs" />
     <Compile Include="Modal\ReminderEmailModal.cs" />
+    <Compile Include="Modal\UpdateEmailModal.cs" />
     <Compile Include="Modal\WaitingListEmailModal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemplateEngine.cs" />
@@ -70,12 +71,18 @@
     <Content Include="MetaTemplate\Confirmation\raw.html" />
     <Content Include="MetaTemplate\Image\bags.png" />
     <Content Include="MetaTemplate\Image\doorstep.PNG" />
+    <Content Include="MetaTemplate\Image\error.PNG" />
     <Content Include="MetaTemplate\Image\heart.png" />
     <Content Include="MetaTemplate\Image\logo.png" />
     <Content Include="MetaTemplate\Image\matrix.PNG" />
+    <Content Include="MetaTemplate\Image\Star_fill.PNG" />
+    <Content Include="MetaTemplate\Image\Star_stripe.PNG" />
     <Content Include="MetaTemplate\Reminder\raw.html" />
     <Content Include="MetaTemplate\Reminder\reminder.css" />
     <Content Include="MetaTemplate\Reminder\reminder.html" />
+    <Content Include="MetaTemplate\Update\raw.html" />
+    <Content Include="MetaTemplate\Update\update.css" />
+    <Content Include="MetaTemplate\Update\update.html" />
     <Content Include="MetaTemplate\WaitingList\raw.html" />
     <Content Include="MetaTemplate\WaitingList\waitingList.css" />
     <Content Include="MetaTemplate\WaitingList\waitingList.html" />
