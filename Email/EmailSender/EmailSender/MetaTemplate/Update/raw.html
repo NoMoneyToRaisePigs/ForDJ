@@ -19,34 +19,34 @@
                     <p style="box-sizing:border-box;font-family:sans-serif;margin:8px 0;color:white;letter-spacing:2px;font-size:28px;font-weight:400;">{{LegendInfo}}}</p>           
                 </div>
                 <div id="main-content" style="box-sizing:border-box;font-family:sans-serif;color:#455469;letter-spacing:1px;font-size:20px;padding-left:32px;">
-                    <h3 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Hey {{UserName}}},</h3>
+                    <h3 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Hey {{UserName}},</h3>
                     <p style="box-sizing: border-box;font-family: sans-serif;">This is your recyling update of the week!</p>
-                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Correct &amp; Recyclable:</h4>
+                    <h4 style="font-size:22px;box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Correct &amp; Recyclable:</h4>
                     <p class="star-rate" style="box-sizing:border-box;font-family:sans-serif;text-align:center;">
                         [[PositiveRate@
                         <img class="star" src="{{StarFillImg}}" style="box-sizing:border-box;font-family:sans-serif;height:45px;width:45px;">
                         ]]
-                        [[NagetiveRate@
+                        [[NegativeRate@
                         <img class="star" src="{{StarStripeImg}}" style="box-sizing:border-box;font-family:sans-serif;height:45px;width:45px;">
                         ]]
                     </p>
-                    [[item of UnRecyclables:
-                    <p style="box-sizing@ border-box;font-family: sans-serif;"><img class="error" src="{{ErrorImg}}" style="box-sizing:border-box;font-family:sans-serif;margin-right:24px;height:20px;width:15px;vertical-align:middle;"><span style="box-sizing: border-box;font-family: sans-serif;">$item.Name$</span></p>
+                    [[item of UnRecyclables @
+                    <p style="box-sizing: border-box;font-family: sans-serif;"><img class="error" src="{{ErrorImg}}" style="box-sizing:border-box;font-family:sans-serif;margin-right:24px;height:20px;width:15px;vertical-align:middle;"><span style="box-sizing: border-box;font-family: sans-serif;">$$item.Name$$</span></p>
                     ]]                   
-                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Your recycling this week:</h4>
-                    [[item of Recyclables@                     
+                    <h4 style="font-size:22px;box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Your recycling this week:</h4>
+                    [[item of Recyclables @                     
                     <div class="percent-container" style="box-sizing:border-box;font-family:sans-serif;display:flex;width:600px;justify-content:left;align-items:center;">
-                        <div class="percent-label" style="box-sizing:border-box;font-family:sans-serif;width:30%;"><span style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;">$item.Name$ recycled:</span></div>
+                        <div class="percent-label" style="box-sizing:border-box;font-family:sans-serif;width:30%;"><span style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;">$$item.Name$$ recycled:</span></div>
                         <div class="percent-full-bar" style="box-sizing:border-box;font-family:sans-serif;display:flex;align-items:center;width:70%;max-width:300px;">
-                            <div class="percent-bar" style="width:$item.Percent$;;box-sizing:border-box;font-family:sans-serif;display:inline-block;height:16px;background-color:#fbcfc1;border:1px solid #7c7b7b;"></div>                        
-                            <span class="percent-kg" style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;margin-left:4px;">$item.Weight$</span>
+                            <div class="percent-bar" style="width:$$item.Percent$$%;;box-sizing:border-box;font-family:sans-serif;display:inline-block;height:16px;background-color:#fbcfc1;border:1px solid #7c7b7b;"></div>                        
+                            <span class="percent-kg" style="box-sizing:border-box;font-family:sans-serif;color:#8993a0;font-size:14px;margin-left:4px;">$$item.Weight$$</span>
                         </div>
                     </div> 
                     ]]
  
  
-                    <h4 style="box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Total recycled weight: <span style="box-sizing: border-box;
-    font-family: sans-serif;">2kg</span>
+                    <h4 style="font-size:22px;box-sizing:border-box;font-family:sans-serif;color:#f27f5a;">Total recycled weight: <span style="box-sizing: border-box;
+    font-family: sans-serif;">{{TotalWeight}}</span>
 </h4>
                     <p style="box-sizing: border-box;
     font-family: sans-serif;">Cheers to making recycling better!</p>

@@ -9,6 +9,7 @@ namespace EmailSender.Modal
     public class UpdateEmailModal : EmailModalBase
     {
         public string LegendInfo { get; set; }
+
         public int PositiveRate { get; set; }
 
         public int NegativeRate { get; set; }
@@ -22,6 +23,8 @@ namespace EmailSender.Modal
         public RecycleItem[] UnRecyclables { get; set; }
 
         public RecycleItem[] Recyclables { get; set; }
+
+        public double TotalWeight { get; set; }
     }
 
     public class RecycleItem
